@@ -1,0 +1,20 @@
+# This file defines a 'Group' entity, which represents your team.
+# It's used to assign ownership to different parts of your software catalog.
+
+# The version of the Backstage catalog API schema. v1alpha1 is standard.
+apiVersion: backstage.io/v1alpha1
+# 'kind' specifies the type of entity. Here, it's a 'Group'.
+kind: Group
+metadata:
+  # The unique identifier for this group. Used in 'owner' fields like 'group:default/andenteic-team'.
+  name: andenteic-team
+  # A human-readable description for display in the Backstage UI.
+  description: The team responsible for the Aldente application
+spec:
+  # 'type' provides more specific context for the kind of group. 'team' is common.
+  type: team
+  # 'profile' contains optional display information for the group's page.
+  profile:
+    displayName: Andenteic Team
+  # 'children' is used to create a hierarchy of teams, but we'll leave it empty for a single team.
+  children: []
