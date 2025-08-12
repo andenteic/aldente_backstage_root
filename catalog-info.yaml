@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aldente_backstage_root
+  annotations:
+    github.com/project-slug: andenteic/aldente_backstage_root
+spec:
+  type: other
+  lifecycle: unknown
+  owner: asdsad
